@@ -1,7 +1,7 @@
 ARG  CODE_VERSION=latest
 FROM python:3.12.3-bookworm
 
-WORKDIR /cl-dashboard-firestore
+WORKDIR /cl-dashboard-nairobi-moms
 
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/curiouslearning/cl-dashboard-firestore.git .
+RUN git clone https://github.com/curiouslearning/cl-dashboard-nairobi-moms.git .
 
 RUN pip3 install -r requirements.txt
 
