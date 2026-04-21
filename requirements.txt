@@ -17,6 +17,7 @@ google-cloud-bigquery-storage==2.25.0
 google-cloud-storage==2.18.2
 google-cloud-secret-manager==2.20.2
 google-cloud-logging==3.11.3
+db-dtypes
 
 # --- gRPC / protobuf ---
 grpcio
