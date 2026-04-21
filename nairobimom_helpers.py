@@ -10,7 +10,7 @@ import pandas as pd
 import streamlit as st
 
 
-# ============================================================
+# ================================================@st.cache_data(show_spinner=False)============
 # Cohort configuration
 # ============================================================
 
@@ -98,6 +98,7 @@ def resolve_cohort(url_key: str) -> tuple[str, str]:
     return cohort_name, alias
 
 
+@st.cache_data(show_spinner=False)
 def filter_cohort(df: pd.DataFrame, cohort_name: str) -> pd.DataFrame:
     return df.loc[df["cohort_name"] == cohort_name].copy()
 
@@ -105,7 +106,7 @@ def filter_cohort(df: pd.DataFrame, cohort_name: str) -> pd.DataFrame:
 # ============================================================
 # Funnel computation
 # ============================================================
-
+@st.cache_data(show_spinner=False)
 def compute_funnel(df: pd.DataFrame) -> list[dict]:
     """
     For each funnel step, compute user count and % of total users.
