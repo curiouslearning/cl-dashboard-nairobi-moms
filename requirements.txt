@@ -1,0 +1,28 @@
+# ================================
+# CL Dashboard - Firestore
+# ================================
+
+# --- Core dashboard stack ---
+streamlit
+pandas
+plotly
+
+# --- Google Cloud ecosystem ---
+# --- Google Cloud ecosystem ---
+google-api-core==2.15.0          # must be >=2.15.0 for storage
+google-auth==2.35.0
+google-cloud-core==2.4.1
+google-cloud-bigquery==3.27.0
+google-cloud-bigquery-storage==2.25.0
+google-cloud-storage==2.18.2
+google-cloud-secret-manager==2.20.2
+google-cloud-logging==3.11.3
+
+# --- gRPC / protobuf ---
+grpcio
+grpcio-status
+protobuf
+
+# --- Utilities ---
+requests
+st-pages
