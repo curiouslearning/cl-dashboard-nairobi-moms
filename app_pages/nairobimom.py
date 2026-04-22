@@ -37,7 +37,7 @@ total_users = len(df)
 # Page header
 # ============================================================
 st.markdown(
-    f"## Nairobimom Cohort Dashboard "
+    f"## Nairobi Moms Cohort Dashboard "
     f"<span class='nm-cohort-badge'>{alias}</span>",
     unsafe_allow_html=True,
 )
