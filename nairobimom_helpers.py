@@ -16,22 +16,18 @@ import streamlit as st
 
 # Maps URL query param ?cohort=momX → internal cohort_name in the parquet
 COHORT_URL_MAP: dict[str, str] = {
-    "mom1": "app:nairobimomone_swahili_english-standalone",
-    "mom2": "app:nairobimomtwo_swahili_english-standalone",
-    "mom3": "app:nairobimomthree_swahili_english-standalone",
+    "njeri":   "app:nairobimomone_swahili_english-standalone",
+    "laureen": "app:nairobimomtwo_swahili_english-standalone",
+    "njambi":  "app:nairobimomthree_swahili_english-standalone",
 }
 
-# Human-readable aliases for display
 COHORT_ALIAS: dict[str, str] = {
-    "app:nairobimomone_swahili_english-standalone":   "Mom 1",
-    "app:nairobimomtwo_swahili_english-standalone":   "Mom 2",
-    "app:nairobimomthree_swahili_english-standalone": "Mom 3",
+    "app:nairobimomone_swahili_english-standalone":   "Njeri",
+    "app:nairobimomtwo_swahili_english-standalone":   "Laureen",
+    "app:nairobimomthree_swahili_english-standalone": "Njambi",
 }
 
-# Reverse: alias → cohort_name (handy for pickers)
-ALIAS_TO_COHORT: dict[str, str] = {v: k for k, v in COHORT_ALIAS.items()}
-
-DEFAULT_URL_KEY = "mom1"
+DEFAULT_URL_KEY = "njeri"
 
 
 # ============================================================

@@ -132,7 +132,7 @@ def user_count_html(total_users: int) -> str:
 
 def switcher_html(url_key: str) -> str:
     html = "<div class='nm-switcher'>"
-    for key, name in [("mom1", "Mom 1"), ("mom2", "Mom 2"), ("mom3", "Mom 3")]:
+    for key, name in [("njeri", "Njeri"), ("laureen", "Laureen"), ("njambi", "Njambi")]:
         active_class = "active" if key == url_key.lower() else ""
         html += f"<a href='?cohort={key}' class='{active_class}'>{name}</a>"
     html += "</div>"
